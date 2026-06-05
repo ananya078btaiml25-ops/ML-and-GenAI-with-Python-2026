@@ -1,0 +1,39 @@
+1. Area of Rectangle
+# Program to find area of a rectangle
+
+length = float(input("Enter length: "))
+width = float(input("Enter width: "))
+
+area = length * width
+
+print("Area of Rectangle =", area)
+
+2. Simple Interest
+# Program to calculate Simple Interest
+
+p = float(input("Enter Principal amount: "))
+r = float(input("Enter Rate of Interest: "))
+t = float(input("Enter Time in years: "))
+
+si = (p * r * t) / 100
+
+print("Simple Interest =", si)
+
+# Program to calculate Simple Interest
+
+p = float(input("Enter Principal amount: "))
+r = float(input("Enter Rate of Interest: "))
+t = float(input("Enter Time in years: "))
+
+si = (p * r * t) / 100
+
+print("Simple Interest =", si)
+
+3. Convert Temperature (C → F)
+# Convert temperature from Celsius to Fahrenheit
+
+c = float(input("Enter temperature in Celsius: "))
+
+f = (c * 9/5) + 32
+
+print("Temperature in Fahrenheit =", f)
