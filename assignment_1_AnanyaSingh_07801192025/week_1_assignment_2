@@ -1,0 +1,101 @@
+Q1. Loan Approval Prediction
+Type of problem: Classification (Approved or Rejected are categories).
+Most suitable algorithm: Decision Tree
+It works well for classification problems.
+It provides easy-to-understand decision rules.
+KNN can also be used, but Decision Trees are generally more interpretable.
+Linear Regression is mainly used for predicting continuous values, so it is not suitable here.
+
+Q2. Difference Between Feature and Label
+Feature: Input information used to make a prediction.
+Label: The output or target that the model predicts.
+Example: Loan Approval
+Features:
+Income
+Age
+Credit Score
+Employment Status
+Label:
+Loan Approved (Yes/No)
+Here, the model uses the features to predict the label.
+
+Q3. How Does a Decision Tree Predict?
+A Decision Tree makes predictions by asking a series of questions.
+Example:
+Is Credit Score > 700?
+Yes → Go to next question
+No → Reject Loan
+Is Income > ₹50,000?
+Yes → Approve Loan
+No → Reject Loan
+A customer's data travels through these branches until it reaches a final decision (leaf node).
+
+Q4. Why is KNN a Supervised Learning Algorithm?
+KNN is supervised because it learns from labeled training data.
+It predicts the class of a new data point by looking at the labels of nearby points.
+Can KNN work without labels?
+No.
+Without labels, KNN cannot determine which class to assign to new data.
+
+Q5. KNN Prediction
+Given:
+K = 5
+Nearest neighbors: Yes, Yes, No, Yes, No
+Count:
+Yes = 3
+No = 2
+Prediction: Yes
+Reason: KNN uses majority voting. Since "Yes" appears more frequently among the nearest neighbors, the prediction is "Yes".
+
+Q6. Linear Regression Equation
+y=mx+b
+Where:
+y = Predicted value (dependent variable)
+x = Input feature (independent variable)
+m = Slope of the line (how much y changes when x changes)
+b = Intercept (value of y when x = 0)
+Example:
+x = Hours Studied
+y = Exam Score
+The equation predicts the score based on study hours.
+
+Q7. What is Correlation?
+Correlation measures the strength and direction of the relationship between two variables.
+Value	Meaning
++1	Perfect positive correlation
+0	No correlation
+-1	Perfect negative correlation
+Examples:
++1: Study hours ↑, marks ↑
+0: Shoe size and exam marks
+-1: Speed ↑, travel time ↓
+
+Q8. Disease Detection Model
+Actual Condition	Prediction
+Disease Present	Healthy
+Type of prediction: False Negative
+Why is it dangerous?
+The patient actually has the disease.
+The model incorrectly says they are healthy.
+Treatment may be delayed, causing serious health risks.
+
+Q9. Purpose of a Confusion Matrix
+A Confusion Matrix evaluates classification model performance by comparing actual and predicted classes.
+It contains:
+True Positive (TP)
+True Negative (TN)
+False Positive (FP)
+False Negative (FN)
+Difference from Correlation Matrix
+Confusion Matrix	                           \                            Correlation Matrix
+Evaluates classification performance	        \                Measures relationships between variables
+Uses actual vs predicted values                \                       	Uses feature values
+Contains TP, TN, FP, FN	                        \             Contains correlation coefficients (-1 to +1)
+
+Q10. Comparison of Algorithms
+Algorithm	Main Idea
+Decision Tree	Makes decisions using a series of if-else rules arranged like a tree.
+KNN (K-Nearest Neighbors)	Classifies a data point based on the majority class of its nearest neighbors.
+SVM (Support Vector Machine)	Finds the best boundary (hyperplane) that separates different classes.
+Linear Regression	Predicts continuous values by fitting a straight line to the data.
+Neural Network	Learns complex patterns through interconnected layers of artificial neurons.
